@@ -151,7 +151,7 @@ class EasySearchProvider implements EasySearchService
     public function setBodySort(string $field, string $order): EasySearchService
     {
         $order = strtolower($order);
-        if (empty(array_get($this->params, 'body.sort._score'))) {
+        if (empty($this->params['body.sort._score'])) {
             $this->params['body']['sort']['_score'] = 'desc';
         }
         $this->params['body']['sort'][$field] = $order;

@@ -28,9 +28,11 @@ $service = new Easysearsh\EasySearchProvider('106.15.179.167', '9200', 'http', '
 //$service->createEsDoc('fy.index.test', '3', ['testField' => 'ghi', 'val' => 12]);
 //$service->createEsDoc('fy.index.test', '4', ['testField' => 'jkl', 'val' => 13]);
 
-$service = $service->setIndexName('fy.index.test', true);
-$service->setBodyQueryBetween('val', '10', '13');
-$data = $service->setBodyBoolQuery('testField', 'def')->search();
+$data = $service->setIndexName('fy.index.test', true)
+    ->setBodyQueryBetween('val', '10', '13')
+    ->setBodyQueryBetween('val', '10', '13')
+    ->setBodyBoolQuery('testField', 'def')
+    ->search();
 var_dump($data);
 die;
 
