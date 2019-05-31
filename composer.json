@@ -1,0 +1,23 @@
+{
+    "name": "nuc/elasticsearch",
+    "description": "easy elasticsearch php",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wojiushifangyuan",
+            "email": "wojiushifangyuanlove@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0",
+        "elasticsearch/elasticsearch": "6.7",
+        "illuminate/support": "5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Easysearsh\\": "src/"
+        }
+    }
+}
