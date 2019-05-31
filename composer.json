@@ -1,5 +1,5 @@
 {
-    "name": "nuc/elasticsearch",
+    "name": "fy/elasticsearch",
     "description": "easy elasticsearch php",
     "type": "library",
     "license": "MIT",
